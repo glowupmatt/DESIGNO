@@ -15,7 +15,7 @@ const HeroSlide = () => {
           />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-col gap-[0.875rem] items-center justify-center text-center text-white pt-[5rem] px-[1.5rem]">
+          <div className="flex flex-col gap-[2rem] items-center text-center text-white h-[44.6875rem] mt-[5rem] px-[1.5rem]  z-10">
             <h3 className="tracking-normal leading-8 text-[2rem]">
               Award-winning custom designs and digital branding solutions
             </h3>
@@ -29,7 +29,7 @@ const HeroSlide = () => {
             </div>
           </div>
         </div>
-        <div className="h-[35.77544rem] w-[17.41981rem] relative">
+        <div className="h-[35.77544rem] w-[17.41981rem] absolute top-[28rem]">
           <Image
             alt=""
             src="/assets/home/desktop/image-hero-phone.png"

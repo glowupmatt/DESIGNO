@@ -5,7 +5,7 @@ import { homePageCharacteristics } from "@/data/homePageInfo";
 
 const Services = () => {
   return (
-    <div className="mt-[8rem]">
+    <div className="mt-[6rem]">
       <div className="flex flex-col justify-center items-center gap-[1.5rem]">
         {homePageProjectDisplay.map((data, index) => {
           return (

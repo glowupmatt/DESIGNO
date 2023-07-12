@@ -14,9 +14,9 @@ export default function Home() {
   const [navOpen, setNavOpen] = useState(false);
   return (
     <div>
-      <body
+      <div
         className={classNames({
-          "overflow-hidden": navOpen === true,
+          "overflow-hidden max-h-screen": navOpen === true,
         })}
       >
         <Navigation navOpen={navOpen} setNavOpen={setNavOpen} />
@@ -24,7 +24,7 @@ export default function Home() {
         <div className="relative">
           <Services />
         </div>
-      </body>
+      </div>
     </div>
   );
 }
