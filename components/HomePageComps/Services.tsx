@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { homePageProjectDisplay } from "@/data/homePageInfo";
-import { homePageCharacteristics } from "@/data/homePageInfo";
 
 const Services = () => {
   return (
@@ -10,7 +9,7 @@ const Services = () => {
         {homePageProjectDisplay.map((data, index) => {
           return (
             <div
-              className="flex items-center justify-center rounded-md w-full h-[12.625rem]"
+              className="flex items-center justify-center rounded-md w-full h-[12.625rem] cursor-pointer"
               key={data.title}
             >
               <div className="relative text-white z-10 text-center gap-4 flex flex-col">
@@ -23,6 +22,7 @@ const Services = () => {
                   alt=""
                   src={data.images.mobileImg}
                   fill
+                  quality={100}
                   className="object-fill rounded-md"
                 />
               </div>

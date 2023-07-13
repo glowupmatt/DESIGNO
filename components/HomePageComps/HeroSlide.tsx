@@ -29,11 +29,12 @@ const HeroSlide = () => {
             </div>
           </div>
         </div>
-        <div className="h-[35.77544rem] w-[17.41981rem] absolute top-[28rem]">
+        <div className="h-[35.77544rem] w-[30rem] absolute top-[28rem]">
           <Image
             alt=""
             src="/assets/home/desktop/image-hero-phone.png"
             fill
+            quality={100}
             className="object-cover"
           />
         </div>

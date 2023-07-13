@@ -1,14 +1,11 @@
 "use client";
-
-import Image from "next/image";
 import { useState } from "react";
 import HeroSlide from "@/components/HomePageComps/HeroSlide";
 import Navigation from "@/components/Navigation";
 import Services from "@/components/HomePageComps/Services";
 import classNames from "classnames";
-import GetInTouchButton from "@/components/GetInTouchButton";
-import LearnMoreButton from "@/components/LearnMoreButton";
-import SubmitButton from "@/components/SubmitButton";
+import BrandCharacteristics from "@/components/HomePageComps/BrandCharacteristics";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [navOpen, setNavOpen] = useState(false);
@@ -23,7 +20,9 @@ export default function Home() {
         <HeroSlide />
         <div className="relative">
           <Services />
+          <BrandCharacteristics />
         </div>
+        <Footer />
       </div>
     </div>
   );

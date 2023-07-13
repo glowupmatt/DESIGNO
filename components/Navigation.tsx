@@ -43,7 +43,7 @@ const Navigation = ({ setNavOpen, navOpen }: navigationProps) => {
 
       <ul
         className={classNames(
-          "flex flex-col items-start justify-center w-full p-[1.4rem] bg-black text-white gap-[2rem] font-light tracking-wide text-[20px] absolute z-10",
+          "flex flex-col items-start justify-center w-full p-[1.4rem] bg-black text-white gap-[2rem] font-light tracking-wide text-[20px] absolute z-[1000]",
           { hidden: navOpen === false }
         )}
       >
