@@ -5,7 +5,7 @@ export const homePageProjectDisplay = [
     images: {
       mobileImg: "/assets/home/mobile/image-web-design.jpg",
       tabletImg: "/assets/home/tablet/image-web-design.jpg",
-      desktopImg: "/assets/home/desktop/image-web-design.jpg",
+      desktopImg: "/assets/home/desktop/image-web-design-large.jpg",
     },
   },
   {

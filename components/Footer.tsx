@@ -11,25 +11,28 @@ const Footer = () => {
   ];
   return (
     <div>
-      <div className="relative">
+      <div className="relative flex justify-center">
         <GetInTouchComp />
       </div>
-      <div className="bg-black h-[50.9375rem] flex flex-col gap-[2rem] justify-end items-center text-center">
-        <div className="w-[50%] h-[1.3rem] relative">
-          <Image
-            alt=""
-            src="/assets/logo-light.png"
-            fill
-            className="object-fill"
-          />
+      <div className="bg-black h-[50.9375rem] flex flex-col gap-[2rem] justify-end items-center text-center md:h-[26.4375rem] md:py-[4rem] md:px-[0]">
+        <div className="w-full flex flex-col justify-center items-center gap-[2rem] md:flex-row md:w-full md:px-[2.44rem]">
+          <div className="w-[50%] h-[1.3rem] relative md:w-[12.625rem]">
+            <Image
+              alt=""
+              src="/assets/logo-light.png"
+              fill
+              className="object-fill"
+            />
+          </div>
+          <hr className="w-[90%] border-[gray] md:hidden" />
+          <div className="text-white flex flex-col gap-[2rem] leading-[0.875rem] w-full md:flex-row md:justify-end md:gap-[2.63rem]">
+            <p className="leading-[0.875rem] text-[0.875rem]">OUR COMPANY</p>
+            <p className="leading-[0.875rem] text-[0.875rem]">LOCATIONS</p>
+            <p className="leading-[0.875rem] text-[0.875rem]">CONTACT</p>
+          </div>
         </div>
-        <div className="text-white flex flex-col gap-[2rem] leading-[0.875rem] w-[90%]">
-          <hr className="w-full border-[gray]" />
-          <p className="leading-[0.875rem] text-[0.875rem]">OUR COMPANY</p>
-          <p className="leading-[0.875rem] text-[0.875rem]">LOCATIONS</p>
-          <p className="leading-[0.875rem] text-[0.875rem]">CONTACT</p>
-        </div>
-        <div className="text-white flex flex-col gap-[2.5rem]">
+        <hr className="hidden w-full border-white md:block md:w-[90%]" />
+        <div className="text-white flex flex-col gap-[2.5rem] md:flex-row md:text-start md:w-[90%] md:justify-between">
           <div className="flex flex-col gap-1 text-4">
             <p className="text-[1rem]">Designo Central Office</p>
             <p className="text-[.8rem] font-light text-gray-light">
@@ -50,15 +53,18 @@ const Footer = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="flex gap-4 pb-[2rem]">
-          {socialIcons.map((social, index) => {
-            return (
-              <div key={index} className="w-[24px] h-[24px] relative">
-                <Image alt="" src={social} fill className="object-fill" />
-              </div>
-            );
-          })}
+          <div className="flex gap-4 pb-[2rem] md:pb-0 md:items-end">
+            {socialIcons.map((social, index) => {
+              return (
+                <div
+                  key={index}
+                  className="w-[24px] h-[24px] relative md:pb-0  "
+                >
+                  <Image alt="" src={social} fill className="object-fill" />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

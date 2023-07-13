@@ -10,19 +10,21 @@ import Footer from "@/components/Footer";
 export default function Home() {
   const [navOpen, setNavOpen] = useState(false);
   return (
-    <div>
-      <div
-        className={classNames({
-          "overflow-hidden max-h-screen": navOpen === true,
-        })}
-      >
-        <Navigation navOpen={navOpen} setNavOpen={setNavOpen} />
-        <HeroSlide />
-        <div className="relative">
-          <Services />
-          <BrandCharacteristics />
+    <div className="w-full flex justify-center items-center">
+      <div className="max-w-[65rem]">
+        <div
+          className={classNames("flex  justify-center flex-col w-full", {
+            "overflow-hidden max-h-screen": navOpen === true,
+          })}
+        >
+          <Navigation navOpen={navOpen} setNavOpen={setNavOpen} />
+          <HeroSlide />
+          <div className="p-[2.44rem] relative lg:flex lg:flex-col lg:w-full lg:items-center lg:justify-center ">
+            <Services />
+            <BrandCharacteristics />
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </div>
   );
