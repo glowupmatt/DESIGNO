@@ -33,82 +33,44 @@ const Services = () => {
                 <p>{data.desc}</p>
               </span>
 
-              {homePageProjectDisplay.length === 3 ? (
-                <Link
-                  href={`/${data.link}`}
-                  className={classNames(
-                    "absolute h-[12.625rem] w-[90%] lg:w-full",
-                    {
-                      "lg:h-[40rem]": index === 0,
-                    },
-                    {
-                      "lg:h-[19.25rem]": index === 1,
-                    },
-                    {
-                      "lg:h-[19.25rem]": index === 2,
-                    }
-                  )}
-                >
-                  <div className="bg-[#00000088] w-full absolute h-full z-[8] rounded-md lg:hover:bg-[#e7826b76]"></div>
-                  <Image
-                    alt=""
-                    src={data.images.mobileImg}
-                    fill
-                    quality={100}
-                    className="object-fill rounded-md md:hidden"
-                  />
-                  <Image
-                    alt=""
-                    src={data.images.tabletImg}
-                    fill
-                    quality={100}
-                    className="hidden object-fill rounded-md md:block lg:hidden"
-                  />
-                  <Image
-                    alt=""
-                    src={data.images.desktopImg}
-                    fill
-                    quality={100}
-                    className="hidden object-fill rounded-md lg:block"
-                  />
-                </Link>
-              ) : (
-                <Link
-                  href={`/${data.link}`}
-                  className={classNames(
-                    "absolute h-[12.625rem] w-[90%] lg:w-full",
-                    {
-                      "lg:h-[19.25rem]": index === 0,
-                    },
-                    {
-                      "lg:h-[19.25rem]": index === 1,
-                    }
-                  )}
-                >
-                  <div className="bg-[#00000088] w-full absolute h-full z-[8] rounded-md lg:hover:bg-[#e7826b76]"></div>
-                  <Image
-                    alt=""
-                    src={data.images.mobileImg}
-                    fill
-                    quality={100}
-                    className="object-fill rounded-md md:hidden"
-                  />
-                  <Image
-                    alt=""
-                    src={data.images.tabletImg}
-                    fill
-                    quality={100}
-                    className="hidden object-fill rounded-md md:block lg:hidden"
-                  />
-                  <Image
-                    alt=""
-                    src={data.images.desktopImg}
-                    fill
-                    quality={100}
-                    className="hidden object-fill rounded-md lg:block"
-                  />
-                </Link>
-              )}
+              <Link
+                href={`/${data.link}`}
+                className={classNames(
+                  "absolute h-[12.625rem] w-[90%] lg:w-full",
+                  {
+                    "lg:h-[40rem]": index === 0,
+                  },
+                  {
+                    "lg:h-[19.25rem]": index === 1,
+                  },
+                  {
+                    "lg:h-[19.25rem]": index === 2,
+                  }
+                )}
+              >
+                <div className="bg-[#00000088] w-full absolute h-full z-[8] rounded-md lg:hover:bg-[#e7826b76]"></div>
+                <Image
+                  alt=""
+                  src={data.images.mobileImg}
+                  fill
+                  quality={100}
+                  className="object-fill rounded-md md:hidden"
+                />
+                <Image
+                  alt=""
+                  src={data.images.tabletImg}
+                  fill
+                  quality={100}
+                  className="hidden object-fill rounded-md md:block lg:hidden"
+                />
+                <Image
+                  alt=""
+                  src={data.images.desktopImg}
+                  fill
+                  quality={100}
+                  className="hidden object-fill rounded-md lg:block"
+                />
+              </Link>
             </div>
           );
         })}

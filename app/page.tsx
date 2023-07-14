@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Services from "@/components/HomePageComps/Services";
 import classNames from "classnames";
 import BrandCharacteristics from "@/components/HomePageComps/BrandCharacteristics";
+import { homePageProjectDisplay } from "@/data/homePageInfo";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -22,9 +23,10 @@ export default function Home() {
         <HeroSlide />
         <div className="p-[2.44rem] relative lg:flex lg:flex-col lg:w-full lg:items-center lg:justify-center ">
           <Services />
-          <BrandCharacteristics />
         </div>
+        <BrandCharacteristics />
       </div>
+
       <Footer />
     </div>
   );
