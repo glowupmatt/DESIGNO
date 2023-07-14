@@ -5,7 +5,7 @@ import classNames from "classnames";
 
 const Services = () => {
   return (
-    <div className="mt-[6rem] lg:justify-center lg:flex lg:w-full lg:mt-0 ">
+    <div className="lg:justify-center lg:flex lg:w-full lg:mt-0 ">
       <div className="flex flex-col justify-center items-center gap-[1.5rem] lg:grid lg:grid-cols-2	lg:grid-rows-2 lg:w-full lg:h-[40rem]">
         {homePageProjectDisplay.map((data, index) => {
           return (

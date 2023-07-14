@@ -21,9 +21,15 @@ const Navigation = ({ setNavOpen, navOpen }: navigationProps) => {
           />
         </div>
         <ul className="hidden gap-[2.62rem] md:flex">
-          <li>OUR COMPANY</li>
-          <li>LOCATIONS</li>
-          <li>CONTACT</li>
+          <li className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray">
+            OUR COMPANY
+          </li>
+          <li className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray">
+            LOCATIONS
+          </li>
+          <li className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray">
+            CONTACT
+          </li>
         </ul>
 
         <div className="h-[1.25rem] w-[1.25rem] relative md:hidden">
@@ -52,9 +58,9 @@ const Navigation = ({ setNavOpen, navOpen }: navigationProps) => {
           { hidden: navOpen === false }
         )}
       >
-        <li>OUR COMPANY</li>
-        <li>LOCATIONS</li>
-        <li>CONTACT</li>
+        <li className="hover:underline-offset-4">OUR COMPANY</li>
+        <li className="hover:underline-offset-4">LOCATIONS</li>
+        <li className="hover:underline-offset-4">CONTACT</li>
       </ul>
     </nav>
   );

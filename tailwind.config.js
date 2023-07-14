@@ -18,6 +18,13 @@ module.exports = {
       black: " #1D1C1E",
       white: " #FFFFFF",
     },
+    screens: {
+      sm: "640px",
+      smMd: "425px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
