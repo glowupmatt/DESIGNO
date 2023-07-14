@@ -2,6 +2,7 @@ export const homePageProjectDisplay = [
   {
     title: "WEB DESIGN",
     desc: "VIEW PROJECTS",
+    link: "webDesign",
     images: {
       mobileImg: "/assets/home/mobile/image-web-design.jpg",
       tabletImg: "/assets/home/tablet/image-web-design.jpg",
@@ -11,6 +12,7 @@ export const homePageProjectDisplay = [
   {
     title: "APP DESIGN",
     desc: "VIEW PROJECTS",
+    link: "appDesign",
     images: {
       mobileImg: "/assets/home/mobile/image-app-design.jpg",
       tabletImg: "/assets/home/tablet/image-app-design.jpg",
@@ -20,6 +22,7 @@ export const homePageProjectDisplay = [
   {
     title: "GRAPHIC DESIGN",
     desc: "VIEW PROJECTS",
+    link: "graphicDesign",
     images: {
       mobileImg: "/assets/home/mobile/image-graphic-design.jpg",
       tabletImg: "/assets/home/tablet/image-graphic-design.jpg",

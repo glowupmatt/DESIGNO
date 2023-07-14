@@ -16,7 +16,7 @@ const HeroSlide = () => {
         </div>
         <div className="flex flex-col justify-center items-center lg:flex-row lg:relative lg:justify-start">
           <div className="flex flex-col gap-[2rem] items-center text-center text-white h-[44.6875rem] mt-[5rem] px-[1.5rem] z-10 smMd:mt-0 smMd:p-[3rem]  md:px-[4rem] md:py-[3.75rem] md:mt-[0] md:gap-[2.5rem] md:h-[52.6875rem] lg:justify-center lg:w-[57%] lg:text-start lg:items-start">
-            <h3 className="tracking-normal leading-8 text-[1.5rem] md:text-[2.5rem] md:tracking-normal md:leading-[3rem] md:drop-shadow-2xl">
+            <h3 className="tracking-normal leading-8 text-[1.5rem] font-bold md:text-[2.5rem] md:tracking-normal md:leading-[3rem] md:drop-shadow-2xl">
               Award-winning custom designs and digital branding solutions
             </h3>
             <p className="leading-[1.5625rem] text-[.8rem] md:text-[1rem]">

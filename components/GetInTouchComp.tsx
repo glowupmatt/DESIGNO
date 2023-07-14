@@ -17,8 +17,8 @@ const GetInTouchComp = () => {
         </div> */}
         <div className="w-full h-full flex flex-col justify-center items-center text-center py-[3rem] px-[1.5rem] gap-[2rem] md:w-[70%] lg:flex-row lg:w-[55.438rem] max-w-[69.438rem] lg:p-[5rem] lg:justify-between">
           <div className="flex flex-col gap-4 justify-center items-center lg:w-[28.688rem] lg:text-start lg:items-start">
-            <p className="text-[2rem] z-[20] md:text-[2.5rem] md:leading-[3rem] md:w-[90%]">
-              Let’s talk about your project
+            <p className="text-[2rem] z-[20] leading-[2rem] md:text-[2.5rem] md:leading-[3rem] md:w-[90%]">
+              Let&apos;s talk about your project
             </p>
             <p className="z-[20]">
               Ready to take it to the next level? Contact us today and find out

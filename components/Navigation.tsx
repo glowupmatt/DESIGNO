@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Dispatch, SetStateAction, useState } from "react";
 import classNames from "classnames";
+import Link from "next/link";
 
 type navigationProps = {
   setNavOpen: Dispatch<SetStateAction<boolean>>;
@@ -12,14 +13,14 @@ const Navigation = ({ setNavOpen, navOpen }: navigationProps) => {
   return (
     <nav>
       <div className="flex justify-between p-[1.5rem] md:p-[4.44rem]">
-        <div className="h-[1.6875rem] w-[12.625rem] relative">
+        <Link href="/" className="h-[1.6875rem] w-[12.625rem] relative">
           <Image
             alt="logo"
             src="/assets/logo-dark.png"
             fill
             className="object-fill"
           />
-        </div>
+        </Link>
         <ul className="hidden gap-[2.62rem] md:flex">
           <li className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray">
             OUR COMPANY
