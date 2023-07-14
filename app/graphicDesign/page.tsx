@@ -10,7 +10,7 @@ import TitleHeader from "@/components/TitleHeader";
 import React from "react";
 import Footer from "@/components/Footer";
 
-const page = () => {
+const GraphicDesign = () => {
   const titleHeaderInfo = {
     title: "Graphic Design",
     desc: "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
@@ -50,4 +50,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default GraphicDesign;
