@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <div className="lg:justify-center lg:flex lg:w-full lg:mt-0 ">
+    <div className="lg:justify-center lg:flex lg:w-full lg:mt-0">
       <div
         className={classNames(
           "flex flex-col justify-center items-center gap-[1.5rem] lg:w-full lg:h-[40rem]",
@@ -21,18 +21,13 @@ const Services = () => {
           return (
             <div
               className={classNames(
-                "flex items-center justify-center rounded-md w-full h-[12.625rem] cursor-pointer lg:w-full lg:h-full lg:relative",
+                "flex items-center justify-center rounded-md w-full h-[12.625rem] cursor-pointer lg:w-full lg:h-full lg:relative ",
                 {
                   "lg:row-start-1 lg:row-end-3": index === 0,
                 }
               )}
               key={data.title}
             >
-              <span className="relative text-white z-10 text-center gap-4 flex flex-col lg:absolute">
-                <h3>{data.title}</h3>
-                <p>{data.desc}</p>
-              </span>
-
               <Link
                 href={`/${data.link}`}
                 className={classNames(
@@ -48,7 +43,12 @@ const Services = () => {
                   }
                 )}
               >
-                <div className="bg-[#00000088] w-full absolute h-full z-[8] rounded-md lg:hover:bg-[#e7826b76]"></div>
+                <div className="bg-[#00000088] w-full absolute h-full z-[8] rounded-md lg:hover:bg-[#e7826b76] flex justify-center items-center">
+                  <span className="relative text-white z-10 text-center gap-4 flex flex-col lg:absolute">
+                    <h3>{data.title}</h3>
+                    <p>{data.desc}</p>
+                  </span>
+                </div>
                 <Image
                   alt=""
                   src={data.images.mobileImg}

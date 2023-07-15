@@ -30,6 +30,38 @@ export const homePageProjectDisplay = [
     },
   },
 ];
+export const smallServicePageProjectDisplay = [
+  {
+    title: "WEB DESIGN",
+    desc: "VIEW PROJECTS",
+    link: "webDesign",
+    images: {
+      mobileImg: "/assets/home/mobile/image-web-design.jpg",
+      tabletImg: "/assets/home/tablet/image-web-design.jpg",
+      desktopImg: "/assets/home/desktop/image-web-design-small.jpg",
+    },
+  },
+  {
+    title: "APP DESIGN",
+    desc: "VIEW PROJECTS",
+    link: "appDesign",
+    images: {
+      mobileImg: "/assets/home/mobile/image-app-design.jpg",
+      tabletImg: "/assets/home/tablet/image-app-design.jpg",
+      desktopImg: "/assets/home/desktop/image-app-design.jpg",
+    },
+  },
+  {
+    title: "GRAPHIC DESIGN",
+    desc: "VIEW PROJECTS",
+    link: "graphicDesign",
+    images: {
+      mobileImg: "/assets/home/mobile/image-graphic-design.jpg",
+      tabletImg: "/assets/home/tablet/image-graphic-design.jpg",
+      desktopImg: "/assets/home/desktop/image-graphic-design.jpg",
+    },
+  },
+];
 export const homePageCharacteristics = [
   {
     title: "PASSIONATE",

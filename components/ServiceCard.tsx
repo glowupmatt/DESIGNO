@@ -20,15 +20,16 @@ const ServiceCard = ({ data }: ServiceCardProps) => {
       className="flex items-center justify-center rounded-md w-full h-[12.625rem] cursor-pointer lg:w-full lg:h-full lg:relative"
       key={data.title}
     >
-      <span className="relative text-white z-10 text-center gap-4 flex flex-col lg:absolute">
-        <h3>{data.title}</h3>
-        <p>{data.desc}</p>
-      </span>
       <Link
         href={`/${data.link}`}
         className="absolute h-[12.625rem] w-[90%] lg:w-full  lg:h-[19.25rem]"
       >
-        <div className="bg-[#00000088] w-full absolute h-full z-[8] rounded-md lg:hover:bg-[#e7826b76]"></div>
+        <div className="bg-[#00000088] w-full absolute h-full z-[8] rounded-md lg:hover:bg-[#e7826b76] flex justify-center items-center">
+          <span className="relative text-white z-10 text-center gap-4 flex flex-col lg:absolute">
+            <h3>{data.title}</h3>
+            <p>{data.desc}</p>
+          </span>
+        </div>
         <Image
           alt=""
           src={data.images.mobileImg}

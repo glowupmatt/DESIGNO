@@ -6,7 +6,7 @@ import TitleHeader from "@/components/TitleHeader";
 import WorkDisplayComp from "@/components/WorkDisplayComp";
 import { webDesignData } from "@/data/designData/webDesign";
 import ServiceCard from "@/components/ServiceCard";
-import { homePageProjectDisplay } from "@/data/homePageInfo";
+import { smallServicePageProjectDisplay } from "@/data/homePageInfo";
 import Footer from "@/components/Footer";
 import classNames from "classnames";
 
@@ -21,8 +21,10 @@ const WebDesign = () => {
       <div className="max-w-[65rem] w-full">
         <Navigation setNavOpen={setNavOpen} navOpen={navOpen} />
         <div>
-          <TitleHeader titleHeaderInfo={titleHeaderInfo} />
-          <div className="flex flex-col items-center justify-center gap-8  lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:justify-center lg:items-center p-[2.44rem] lg:mb-[16rem]">
+          <div className="max-w-[65rem] w-full">
+            <TitleHeader titleHeaderInfo={titleHeaderInfo} />
+          </div>
+          <div className="flex flex-col items-center justify-center gap-8  lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:justify-center lg:items-center py-[2.44rem] lg:mb-[10rem]">
             {webDesignData.map((data, index) => {
               return (
                 <div
@@ -34,8 +36,8 @@ const WebDesign = () => {
               );
             })}
           </div>
-          <div className="flex flex-col p-[2.44rem] gap-[1.5rem] mb-[12rem] lg:flex-row">
-            {homePageProjectDisplay
+          <div className="flex flex-col p-[2.44rem] lg:py-[2.44rem] gap-[1.5rem] lg:flex-row">
+            {smallServicePageProjectDisplay
               .filter((data) => data.title !== "WEB DESIGN")
               .map((data, index) => {
                 return <ServiceCard key={data.title} data={data} />;
@@ -43,7 +45,7 @@ const WebDesign = () => {
           </div>
         </div>
       </div>
-      <div className="lg:mt-[25rem]">
+      <div className="">
         <Footer />
       </div>
     </div>

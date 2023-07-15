@@ -10,10 +10,8 @@ const Footer = () => {
     "/assets/shared/desktop/icon-youtube.svg",
   ];
   return (
-    <div>
-      <div className="relative flex justify-center">
-        <GetInTouchComp />
-      </div>
+    <div className="flex flex-col items-center justify-center">
+      <GetInTouchComp />
       <div className="bg-black h-[50.9375rem] w-full flex justify-center items-center md:h-[auto] lg:w-screen">
         <div className="flex flex-col gap-[2rem] mt-[10rem] w-screen justify-end items-center text-center md:h-[26.4375rem] md:py-[4rem] md:px-[4rem] lg:w-[69.438rem] md:mt-0">
           <div className="w-full flex flex-col justify-center items-center gap-[2rem] md:flex-row md:w-full md:px-[2.44rem]">

@@ -3,7 +3,7 @@
 import ServiceCard from "@/components/ServiceCard";
 import WorkDisplayComp from "@/components/WorkDisplayComp";
 import { graphicDesignData } from "@/data/designData/graphicDesign";
-import { homePageProjectDisplay } from "@/data/homePageInfo";
+import { smallServicePageProjectDisplay } from "@/data/homePageInfo";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import TitleHeader from "@/components/TitleHeader";
@@ -21,8 +21,10 @@ const GraphicDesign = () => {
       <div className="max-w-[65rem] w-full">
         <Navigation setNavOpen={setNavOpen} navOpen={navOpen} />
         <div>
-          <TitleHeader titleHeaderInfo={titleHeaderInfo} />
-          <div className="flex flex-col items-center justify-center gap-8  lg:flex-row lg:justify-center lg:items-center p-[2.44rem] lg:mb-[8rem]">
+          <div className="p-[2.44rem]">
+            <TitleHeader titleHeaderInfo={titleHeaderInfo} />
+          </div>
+          <div className="flex flex-col items-center justify-center gap-8  lg:flex-row lg:justify-center lg:items-center py-[2.44rem] lg:mb-[8rem]">
             {graphicDesignData.map((data, index) => {
               return (
                 <div
@@ -34,8 +36,8 @@ const GraphicDesign = () => {
               );
             })}
           </div>
-          <div className="flex flex-col p-[2.44rem] mb-[16rem] gap-[1.5rem] lg:mb-0 lg:flex-row">
-            {homePageProjectDisplay
+          <div className="flex flex-col p-[2.44rem] lg:py-[2.44rem] mb-0 gap-[1.5rem] lg:mb-[10rem] lg:flex-row">
+            {smallServicePageProjectDisplay
               .filter((data) => data.title !== "GRAPHIC DESIGN")
               .map((data, index) => {
                 return <ServiceCard key={data.title} data={data} />;
@@ -43,7 +45,7 @@ const GraphicDesign = () => {
           </div>
         </div>
       </div>
-      <div className="lg:mt-[25rem]">
+      <div className="">
         <Footer />
       </div>
     </div>
