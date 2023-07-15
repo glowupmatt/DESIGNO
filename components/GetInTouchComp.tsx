@@ -4,7 +4,7 @@ import GetInTouchButton from "./GetInTouchButton";
 
 const GetInTouchComp = () => {
   return (
-    <div className="p-[2.44rem] w-full max-w-[69.438rem] relative top-[8rem] z-10 md:default">
+    <div className="p-[2.44rem] h-[20rem] top-[3rem] smMd:top-[6rem] w-full max-w-[69.438rem] relative z-10 md:top-[4rem] md:default lg:p-0 lg:top-[8rem]">
       <div className="text-white bg-peach rounded-md relative overflow-hidden md:flex md:justify-center md:items-center">
         {/* <div className="w-full h-full absolute scale-[2.3] rotate-[190deg] contrast-100 right-[4rem]">
           <Image
