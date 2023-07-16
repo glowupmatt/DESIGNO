@@ -22,7 +22,7 @@ const AppDesign = () => {
         <div className="max-w-[65rem] w-full">
           <TitleHeader titleHeaderInfo={titleHeaderInfo} />
         </div>
-        <div className="flex flex-col items-center justify-center gap-8  lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:justify-center lg:items-center py-[2.44rem] lg:mb-[15rem]">
+        <div className="flex flex-col items-center justify-center gap-8  lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:justify-center lg:items-center py-[2.44rem]">
           {appDesignData.map((data, index) => {
             return (
               <div
@@ -34,7 +34,7 @@ const AppDesign = () => {
             );
           })}
         </div>
-        <div className="flex flex-col p-[2.44rem] lg:p-0 lg:py-[2.44rem] gap-[1.5rem] lg:flex-row">
+        <div className="flex flex-col p-[2.44rem] lg:p-0 lg:pb-[2.44rem] lg:pt-[6.44rem] gap-[1.5rem] lg:flex-row">
           {smallServicePageProjectDisplay
             .filter((data) => data.title !== "APP DESIGN")
             .map((data, index) => {

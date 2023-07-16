@@ -59,7 +59,9 @@ const Navigation = ({ setNavOpen, navOpen }: navigationProps) => {
           { hidden: navOpen === false }
         )}
       >
-        <li className="hover:underline-offset-4">OUR COMPANY</li>
+        <Link href="/about-us" className="hover:underline-offset-4">
+          OUR COMPANY
+        </Link>
         <li className="hover:underline-offset-4">LOCATIONS</li>
         <li className="hover:underline-offset-4">CONTACT</li>
       </ul>

@@ -22,7 +22,7 @@ const ServiceCard = ({ data }: ServiceCardProps) => {
     >
       <Link
         href={`/${data.link}`}
-        className="absolute h-[12.625rem] w-[90%] lg:w-full  lg:h-[19.25rem]"
+        className="relative h-[12.625rem] w-[90%] lg:w-full  lg:h-[19.25rem]"
       >
         <div className="bg-[#00000088] w-full absolute h-full z-[8] rounded-md lg:hover:bg-[#e7826b76] flex justify-center items-center">
           <span className="relative text-white z-10 text-center gap-4 flex flex-col lg:absolute">

@@ -1,7 +1,19 @@
-const SubmitButton = () => {
+import classNames from "classnames";
+
+export type SubmitButtonProps = {
+  children: JSX.Element;
+  buttonStyles: string;
+};
+
+const SubmitButton = ({ children, buttonStyles }: SubmitButtonProps) => {
   return (
-    <button className="bg-white w-[152px] h-[56px] hover:bg-peach-light rounded-lg text-black hover:text-white">
-      <p>Submit</p>
+    <button
+      className={classNames(
+        "w-[152px] h-[56px] hover:bg-peach-light rounded-lg text-black hover:text-white",
+        `${buttonStyles}`
+      )}
+    >
+      <p>{children}</p>
     </button>
   );
 };

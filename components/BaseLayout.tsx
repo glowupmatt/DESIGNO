@@ -25,7 +25,7 @@ export default function BaseLayout({ children }: BaseLayoutProps) {
           <Navigation navOpen={navOpen} setNavOpen={setNavOpen} />
         </div>
         {children}
-        <div className="lg:mt-[10rem]">
+        <div>
           <Footer />
         </div>
       </div>

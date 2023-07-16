@@ -4,7 +4,7 @@ import { homePageCharacteristics } from "@/data/homePageInfo";
 
 const BrandCharacteristics = () => {
   return (
-    <div className="mt-[5.5rem] p-[2.44rem] flex flex-col gap-[5rem] lg:flex-row">
+    <div className="p-[2.44rem] flex flex-col gap-[5rem] lg:flex-row">
       {homePageCharacteristics.map((data, index) => {
         return (
           <div

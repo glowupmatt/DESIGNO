@@ -19,7 +19,7 @@ const GraphicDesign = () => {
       <div className="max-w-[65rem] w-full">
         <TitleHeader titleHeaderInfo={titleHeaderInfo} />
         <div>
-          <div className="flex flex-col items-center justify-center gap-8  lg:flex-row lg:justify-center lg:items-center py-[2.44rem] lg:mb-[15rem]">
+          <div className="flex flex-col items-center justify-center gap-8  lg:flex-row lg:justify-center lg:items-center py-[2.44rem]">
             {graphicDesignData.map((data, index) => {
               return (
                 <div
@@ -31,7 +31,7 @@ const GraphicDesign = () => {
               );
             })}
           </div>
-          <div className="flex flex-col lg:py-[2.44rem] mb-0 gap-[1.5rem] lg:mb-[15rem] lg:flex-row">
+          <div className="flex flex-col lg:pb-[2.44rem] lg:pt-[6.44rem] mb-0 gap-[1.5rem] lg:flex-row">
             {smallServicePageProjectDisplay
               .filter((data) => data.title !== "GRAPHIC DESIGN")
               .map((data, index) => {
