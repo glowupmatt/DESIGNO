@@ -11,6 +11,8 @@ const WebDesign = () => {
   const titleHeaderInfo = {
     title: "Web Design",
     desc: "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
+    textContainer: "",
+    textStyles: "",
   };
   return (
     <BaseLayout>

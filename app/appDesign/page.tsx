@@ -14,6 +14,8 @@ const AppDesign = () => {
   const titleHeaderInfo = {
     title: "App Design",
     desc: "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
+    textContainer: "",
+    textStyles: "",
   };
 
   return (

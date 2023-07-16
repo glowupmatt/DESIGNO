@@ -22,9 +22,12 @@ const Navigation = ({ setNavOpen, navOpen }: navigationProps) => {
           />
         </Link>
         <ul className="hidden gap-[2.62rem] md:flex">
-          <li className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray">
+          <Link
+            href="/about-us"
+            className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray"
+          >
             OUR COMPANY
-          </li>
+          </Link>
           <li className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray">
             LOCATIONS
           </li>

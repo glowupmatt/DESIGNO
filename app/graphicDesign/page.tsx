@@ -12,6 +12,8 @@ const GraphicDesign = () => {
   const titleHeaderInfo = {
     title: "Graphic Design",
     desc: "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
+    textContainer: "",
+    textStyles: "",
   };
 
   return (
