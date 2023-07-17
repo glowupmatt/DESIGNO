@@ -9,15 +9,15 @@ import SubmitButton from "@/components/SubmitButton";
 const aboutUs = () => {
   const titleHeaderInfo = {
     title: "About Us",
-    desc: "Founded in 2010, we are a creative agency that produces lasting results for our clients. We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients’ audiences.",
+    desc: "Founded in 2010, we are a creative agency that produces lasting results for our clients. We've partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We're always looking forward to creating brands, products, and digital experiences that connect with our clients' audiences.",
     textContainer: "",
-    textStyles: "flex flex-col gap-4 p-[2.55rem] lg:w-[40%] ",
+    textStyles: "flex flex-col gap-4 lg:w-[40%] ",
   };
 
   const bottomTitleHeaderInfo = {
     title: "The real deal",
     bodyOne:
-      "As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own. Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every opportunity. We make design and technology more accessible and give you tools to measure success.",
+      "As strategic partners in our clients' businesses, we are ready to take on any challenge as our own. Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every opportunity. We make design and technology more accessible and give you tools to measure success.",
     bodyTwo:
       "We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results.",
     bodyStyles:

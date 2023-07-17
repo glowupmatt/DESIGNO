@@ -24,8 +24,8 @@ export default function BaseLayout({ children }: BaseLayoutProps) {
         <div className={classNames("flex  justify-center flex-col w-full")}>
           <Navigation navOpen={navOpen} setNavOpen={setNavOpen} />
         </div>
-        {children}
-        <div>
+        <div className="">{children}</div>
+        <div className="lg:mt-[10rem]">
           <Footer />
         </div>
       </div>

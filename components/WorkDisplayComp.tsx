@@ -24,7 +24,7 @@ const WorkDisplayComp = ({ data }: WorkDisplayCompProps) => {
             className="object-cover rounded-t-lg md:rounded-t-none md:rounded-l-lg lg:rounded-t-lg lg:rounded-bl-none "
           />
         </div>
-        <div className="w-[20.438rem] text-center p-[2rem] bg-[#FDF3F0] rounded-b-lg gap-4 flex flex-col md:w-[21.125rem] md:justify-center md:rounded-b-none md:rounded-tr-lg md:rounded-br-lg lg:w-full lg:rounded-b-lg lg:rounded-tr-none lg:rounded-br-lg lg:h-[12rem] hover:bg-peach hover:text-white">
+        <div className="w-full text-center p-[2rem] bg-[#FDF3F0] rounded-b-lg gap-4 flex flex-col md:w-[21.125rem] md:justify-center md:rounded-b-none md:rounded-tr-lg md:rounded-br-lg lg:w-full lg:rounded-b-lg lg:rounded-tr-none lg:rounded-br-lg lg:h-[12rem] hover:bg-peach hover:text-white">
           <h3 className="">{data.title}</h3>
           <p className="font-light">{data.desc}</p>
         </div>

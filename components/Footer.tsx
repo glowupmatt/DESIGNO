@@ -10,10 +10,10 @@ const Footer = () => {
     "/assets/shared/desktop/icon-youtube.svg",
   ];
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center h-[60rem] md:h-full lg:h-[35rem]">
       <GetInTouchComp />
-      <div className="bg-black h-[50.9375rem] w-full flex justify-center items-center md:h-[auto] lg:w-screen">
-        <div className="flex flex-col gap-[2rem] mt-[10rem] w-screen justify-end items-center text-center md:h-[26.4375rem] md:py-[4rem] md:px-[4rem] lg:w-[69.438rem] md:mt-0">
+      <div className="bg-black h-full w-full flex justify-center items-center md:h-[auto] lg:w-screen">
+        <div className="flex flex-col gap-[2rem] h-[45rem] mt-[10rem] w-screen justify-end items-center text-center md:h-[26.4375rem] md:py-[4rem] md:px-[4rem] lg:w-[69.438rem] md:mt-0">
           <div className="w-full flex flex-col justify-center items-center gap-[2rem] md:flex-row md:w-full md:px-[2.44rem]">
             <div className="h-[1.3rem] relative w-[9.625rem] md:w-[12.625rem]">
               <Image

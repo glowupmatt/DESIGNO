@@ -12,16 +12,19 @@ const GraphicDesign = () => {
   const titleHeaderInfo = {
     title: "Graphic Design",
     desc: "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
-    textContainer: "",
-    textStyles: "",
+    textContainer: "h-[20rem]",
+    textStyles: "justify-center",
   };
 
   return (
     <BaseLayout>
-      <div className="max-w-[65rem] w-full">
-        <TitleHeader titleHeaderInfo={titleHeaderInfo} />
-        <div>
-          <div className="flex flex-col items-center justify-center gap-8  lg:flex-row lg:justify-center lg:items-center py-[2.44rem]">
+      <>
+        <div className="flex flex-col lg:gap-[10rem]">
+          <div className="md:p-[2.44rem] lg:p-0">
+            <TitleHeader titleHeaderInfo={titleHeaderInfo} />
+          </div>
+
+          <div className="flex flex-col items-center justify-center gap-8  p-[2.44rem] lg:p-0   lg:flex-row lg:justify-center lg:items-center">
             {graphicDesignData.map((data, index) => {
               return (
                 <div
@@ -33,7 +36,7 @@ const GraphicDesign = () => {
               );
             })}
           </div>
-          <div className="flex flex-col lg:pb-[2.44rem] lg:pt-[6.44rem] mb-0 gap-[1.5rem] lg:flex-row">
+          <div className="flex flex-col mb-0 gap-[1.5rem] lg:flex-row">
             {smallServicePageProjectDisplay
               .filter((data) => data.title !== "GRAPHIC DESIGN")
               .map((data, index) => {
@@ -41,7 +44,7 @@ const GraphicDesign = () => {
               })}
           </div>
         </div>
-      </div>
+      </>
     </BaseLayout>
   );
 };

@@ -17,12 +17,12 @@ type ServiceCardProps = {
 const ServiceCard = ({ data }: ServiceCardProps) => {
   return (
     <div
-      className="flex items-center justify-center rounded-md w-full h-[12.625rem] cursor-pointer lg:w-full lg:h-full lg:relative"
+      className="flex items-center justify-center rounded-md w-full p-[2.44rem] h-[12.625rem] cursor-pointer lg:p-0 lg:w-full lg:pt-[3rem] lg:h-full lg:relative"
       key={data.title}
     >
       <Link
         href={`/${data.link}`}
-        className="relative h-[12.625rem] w-[90%] lg:w-full  lg:h-[19.25rem]"
+        className="relative h-[12.625rem] w-full lg:w-full  lg:h-[19.25rem]"
       >
         <div className="bg-[#00000088] w-full absolute h-full z-[8] rounded-md lg:hover:bg-[#e7826b76] flex justify-center items-center">
           <span className="relative text-white z-10 text-center gap-4 flex flex-col lg:absolute">
