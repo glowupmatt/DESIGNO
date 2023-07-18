@@ -15,7 +15,7 @@ const TitleHeader = ({ titleHeaderInfo }: TitleHeaderProps) => {
   return (
     <div
       className={classNames(
-        "bg-peach w-full flex flex-col justify-center items-center text-white p-[1.5rem] text-center gap-[1.5rem] md:rounded-lg lg:h-[15.75rem]",
+        "bg-peach w-full flex flex-col justify-center items-center text-white p-[1.5rem] text-center gap-[1.5rem] lg:h-full",
         `${titleHeaderInfo.textContainer}`
       )}
     >

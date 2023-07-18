@@ -28,12 +28,18 @@ const Navigation = ({ setNavOpen, navOpen }: navigationProps) => {
           >
             OUR COMPANY
           </Link>
-          <li className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray">
+          <Link
+            href="/locations"
+            className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray"
+          >
             LOCATIONS
-          </li>
-          <li className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray">
+          </Link>
+          <Link
+            href="/contact"
+            className="cursor-pointer hover:decoration-1 hover:underline hover:text-gray"
+          >
             CONTACT
-          </li>
+          </Link>
         </ul>
 
         <div className="h-[1.25rem] w-[1.25rem] relative md:hidden">
@@ -65,8 +71,12 @@ const Navigation = ({ setNavOpen, navOpen }: navigationProps) => {
         <Link href="/about-us" className="hover:underline-offset-4">
           OUR COMPANY
         </Link>
-        <li className="hover:underline-offset-4">LOCATIONS</li>
-        <li className="hover:underline-offset-4">CONTACT</li>
+        <Link href="/locations" className="hover:underline-offset-4">
+          LOCATIONS
+        </Link>
+        <Link href="/contact" className="hover:underline-offset-4">
+          CONTACT
+        </Link>
       </ul>
     </nav>
   );

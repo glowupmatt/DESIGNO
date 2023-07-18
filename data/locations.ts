@@ -9,8 +9,8 @@ export const locations = [
     },
     contactInformation: {
       name: "Contact",
-      number: "P : (02) 6720 9092",
-      email: "M : contact@designo.au",
+      number: "P : +1 253-863-8967",
+      email: "M : contact@designo.co",
     },
     locationImages: {
       tablet: "/assets/locations/tablet/image-map-canada.png",
