@@ -14,12 +14,16 @@ const AppDesign = () => {
   const titleHeaderInfo = {
     title: "App Design",
     desc: "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
-    textContainer: "h-[20rem]",
+    textContainer: "h-[20rem] md:rounded-xl",
     textStyles: "justify-center",
   };
+  const [successfulInput, setSuccessfulInput] = useState(false);
 
   return (
-    <BaseLayout>
+    <BaseLayout
+      successfulInput={successfulInput}
+      setSuccessfulInput={setSuccessfulInput}
+    >
       <>
         <div className="flex flex-col md:gap-[4rem] lg:gap-[10rem]">
           <div className="md:p-[2.44rem] lg:p-0">

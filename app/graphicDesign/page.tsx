@@ -5,19 +5,23 @@ import WorkDisplayComp from "@/components/WorkDisplayComp";
 import { graphicDesignData } from "@/data/designData/graphicDesign";
 import { smallServicePageProjectDisplay } from "@/data/homePageInfo";
 import TitleHeader from "@/components/TitleHeader";
-import React from "react";
+import React, { useState } from "react";
 import BaseLayout from "@/components/BaseLayout";
 
 const GraphicDesign = () => {
   const titleHeaderInfo = {
     title: "Graphic Design",
     desc: "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
-    textContainer: "h-[20rem]",
+    textContainer: "h-[20rem] md:rounded-xl",
     textStyles: "justify-center",
   };
+  const [successfulInput, setSuccessfulInput] = useState(false);
 
   return (
-    <BaseLayout>
+    <BaseLayout
+      successfulInput={successfulInput}
+      setSuccessfulInput={setSuccessfulInput}
+    >
       <>
         <div className="flex flex-col lg:gap-[10rem]">
           <div className="md:p-[2.44rem] lg:p-0">

@@ -1,5 +1,9 @@
 import GetInTouchComp from "./GetInTouchComp";
 import Image from "next/image";
+import { useEffect } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
+import classNames from "classnames";
+import Link from "next/link";
 
 const Footer = () => {
   const socialIcons = [
@@ -9,11 +13,27 @@ const Footer = () => {
     "/assets/shared/desktop/icon-twitter.svg",
     "/assets/shared/desktop/icon-youtube.svg",
   ];
+
+  const pathname = usePathname();
+
+  const contactPage = pathname.includes("/contact");
+
   return (
-    <div className="flex flex-col items-center justify-center h-[60rem] md:h-full lg:h-[35rem]">
-      <GetInTouchComp />
+    <div
+      className={classNames(
+        "flex flex-col items-center justify-center h-[60rem] md:h-full lg:h-[35rem]",
+        { "h-[39.125rem]  lg:h-full": contactPage }
+      )}
+    >
+      {contactPage ? null : <GetInTouchComp />}
       <div className="bg-black h-full w-full flex justify-center items-center md:h-[auto] lg:w-screen">
-        <div className="flex flex-col gap-[2rem] h-[45rem] mt-[10rem] w-screen justify-end items-center text-center md:h-[26.4375rem] md:py-[4rem] md:px-[4rem] lg:w-[69.438rem] md:mt-0">
+        <div
+          className={classNames(
+            "flex flex-col gap-[2rem] h-[45rem]  w-screen justify-end items-center text-center md:h-[26.4375rem] md:py-[4rem] md:px-[4rem] lg:w-[69.438rem] md:mt-0",
+            { "mt-0 h-full justify-center": contactPage },
+            { "mt-[10rem] ": !contactPage }
+          )}
+        >
           <div className="w-full flex flex-col justify-center items-center gap-[2rem] md:flex-row md:w-full md:px-[2.44rem]">
             <div className="h-[1.3rem] relative w-[9.625rem] md:w-[12.625rem]">
               <Image
@@ -25,15 +45,24 @@ const Footer = () => {
             </div>
             <hr className="w-[90%] border-[gray] md:hidden" />
             <div className="text-white flex flex-col gap-[2rem] leading-[0.875rem] w-full md:flex-row md:justify-end md:gap-[2.63rem]">
-              <p className="leading-[0.875rem] text-[0.875rem] cursor-pointer hover:decoration-1 hover:underline hover:text-gray-light">
+              <Link
+                href="/about-us"
+                className="leading-[0.875rem] text-[0.875rem] cursor-pointer hover:decoration-1 hover:underline hover:text-gray-light"
+              >
                 OUR COMPANY
-              </p>
-              <p className="leading-[0.875rem] text-[0.875rem] cursor-pointer hover:decoration-1 hover:underline hover:text-gray-light">
+              </Link>
+              <Link
+                href="/locations"
+                className="leading-[0.875rem] text-[0.875rem] cursor-pointer hover:decoration-1 hover:underline hover:text-gray-light"
+              >
                 LOCATIONS
-              </p>
-              <p className="leading-[0.875rem] text-[0.875rem] cursor-pointer hover:decoration-1 hover:underline hover:text-gray-light">
+              </Link>
+              <Link
+                href="/contact"
+                className="leading-[0.875rem] text-[0.875rem] cursor-pointer hover:decoration-1 hover:underline hover:text-gray-light"
+              >
                 CONTACT
-              </p>
+              </Link>
             </div>
           </div>
           <hr className="hidden border-white md:block md:w-full" />

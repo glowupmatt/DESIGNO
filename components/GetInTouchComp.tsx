@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import GetInTouchButton from "./GetInTouchButton";
+import Link from "next/link";
 
 const GetInTouchComp = () => {
   return (
@@ -25,9 +26,9 @@ const GetInTouchComp = () => {
               how our expertise can help your business grow.
             </p>
           </div>
-          <div className="z-[20]">
+          <Link href="/contact" className="z-[20]">
             <GetInTouchButton />
-          </div>
+          </Link>
         </div>
       </div>
     </div>

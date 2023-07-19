@@ -6,16 +6,21 @@ import { webDesignData } from "@/data/designData/webDesign";
 import ServiceCard from "@/components/ServiceCard";
 import { smallServicePageProjectDisplay } from "@/data/homePageInfo";
 import BaseLayout from "@/components/BaseLayout";
+import { useState } from "react";
 
 const WebDesign = () => {
   const titleHeaderInfo = {
     title: "Web Design",
     desc: "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
-    textContainer: "h-[20rem]",
+    textContainer: "h-[20rem] md:rounded-xl",
     textStyles: "justify-center",
   };
+  const [successfulInput, setSuccessfulInput] = useState(false);
   return (
-    <BaseLayout>
+    <BaseLayout
+      successfulInput={successfulInput}
+      setSuccessfulInput={setSuccessfulInput}
+    >
       <>
         <div className="flex flex-col lg:gap-[10rem]">
           <div className="md:p-[2.44rem] lg:p-0">

@@ -9,7 +9,7 @@ const SubmitButton = ({ children, buttonStyles }: SubmitButtonProps) => {
   return (
     <button
       className={classNames(
-        "w-[152px] h-[56px] hover:bg-peach-light rounded-lg text-black hover:text-white",
+        "w-[152px] h-[56px] cursor-pointer hover:bg-peach-light rounded-lg text-black hover:text-white",
         `${buttonStyles}`
       )}
     >

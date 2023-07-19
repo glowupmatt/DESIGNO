@@ -5,6 +5,7 @@ import TextBox from "@/components/TextBox";
 import { locations } from "@/data/locations";
 import classNames from "classnames";
 import Image from "next/image";
+import { useState } from "react";
 
 const Locations = () => {
   const data = locations.map((data) => {
@@ -25,11 +26,13 @@ const Locations = () => {
     };
     return locationsData;
   });
-
-  console.log(data);
+  const [successfulInput, setSuccessfulInput] = useState(false);
 
   return (
-    <BaseLayout>
+    <BaseLayout
+      successfulInput={successfulInput}
+      setSuccessfulInput={setSuccessfulInput}
+    >
       <>
         <div className="flex flex-col items-center gap-[7.5rem] w-full text-center justify-center lg:gap-[3rem]">
           {data.map((data, index) => {
@@ -37,7 +40,7 @@ const Locations = () => {
               <div
                 key={index}
                 className={classNames(
-                  "flex flex-col gap-[3rem]  lg:w-full lg:flex-row",
+                  "flex flex-col md:gap-[3rem]  lg:w-full lg:flex-row",
                   { "lg:flex-row-reverse": index === 1 }
                 )}
               >

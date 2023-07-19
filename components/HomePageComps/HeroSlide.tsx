@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import LearnMoreButton from "../LearnMoreButton";
+import Link from "next/link";
 
 const HeroSlide = () => {
   return (
@@ -24,9 +25,9 @@ const HeroSlide = () => {
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
             </p>
-            <div className="mt-0.625">
+            <Link href="/about-us" className="mt-0.625">
               <LearnMoreButton />
-            </div>
+            </Link>
           </div>
           <div className="hidden lg:block lg:absolute lg:w-[40rem] lg:h-full lg:right-[-8rem] lg:top-[7rem]">
             <Image

@@ -1,19 +1,22 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import TitleHeader from "@/components/TitleHeader";
 import BaseLayout from "@/components/BaseLayout";
 import TextBox from "@/components/TextBox";
 import { locations } from "@/data/locations";
 import SubmitButton from "@/components/SubmitButton";
+import Locations from "@/components/Locations";
 
-const aboutUs = () => {
+const AboutUs = () => {
   const titleHeaderInfo = {
     title: "About Us",
     desc: "Founded in 2010, we are a creative agency that produces lasting results for our clients. We've partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We're always looking forward to creating brands, products, and digital experiences that connect with our clients' audiences.",
     textContainer:
-      "py-[2rem] md:rounded-b-md lg:rounded-l-xl lg:rounded-br-none lg:p-[4rem]",
+      "py-[2rem] md:rounded-b-md md:p-[4rem] lg:rounded-l-xl lg:rounded-br-none lg:p-[4rem] h-full",
     textStyles:
-      "flex flex-col items-center  gap-4 lg:w-[40%] md:h-full lg:w-full lg:h-full lg:justify-center lg:items-start lg:text-start ",
+      "flex flex-col items-center  w-full gap-4 h-[395px] justify-center lg:w-[40%] md:gap-[2rem] md:h-full lg:w-full lg:h-full lg:justify-center lg:items-start lg:text-start ",
   };
 
   const textBoxData = {
@@ -41,10 +44,12 @@ const aboutUs = () => {
     bodyOneStyles: "text-[0.9375rem]",
     bodyTwoStyles: "text-[0.9375rem]",
   };
-
-  const buttonStyles = "bg-peach text-white";
+  const [successfulInput, setSuccessfulInput] = useState(false);
   return (
-    <BaseLayout>
+    <BaseLayout
+      successfulInput={successfulInput}
+      setSuccessfulInput={setSuccessfulInput}
+    >
       <>
         <div className="md:flex md:flex-col md:justify-center md:items-center md:gap-[7.5rem] md:p-[2.44rem] lg:p-0">
           <div className="lg:flex lg:h-[480px] lg:w-full lg:flex-row-reverse">
@@ -101,31 +106,7 @@ const aboutUs = () => {
             </div>
             <TextBox textBoxData={textBoxData} />
           </div>
-          <div className="flex flex-col items-center mb-[7.5rem] md:mb-0 justify-center gap-[4rem] mt-[3rem] lg:flex-row lg:w-full">
-            {locations.map((data, index) => {
-              return (
-                <div
-                  key={data.title}
-                  className="w-full flex flex-col items-center gap-8"
-                >
-                  <div className="relative w-[12.625rem] h-[12.625rem]">
-                    <Image alt={data.title} src={data.img} fill quality={100} />
-                    <Image
-                      alt={data.title}
-                      src="/assets/home/desktop/bg-pattern-hero-home.svg"
-                      fill
-                      quality={100}
-                      className="object-cover rotate-[-100deg]"
-                    />
-                  </div>
-                  <h3>{data.title}</h3>
-                  <SubmitButton buttonStyles={buttonStyles}>
-                    <>SEE LOCATION</>
-                  </SubmitButton>
-                </div>
-              );
-            })}
-          </div>
+          <Locations />
           <div className="lg:flex lg:h-[640px] lg:w-full lg:flex-row-reverse">
             <div className="h-[20rem] w-full relative lg:h-full lg:w-[100rem]">
               <Image
@@ -160,4 +141,4 @@ const aboutUs = () => {
   );
 };
 
-export default aboutUs;
+export default AboutUs;
