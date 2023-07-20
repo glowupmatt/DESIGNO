@@ -25,7 +25,7 @@ const Locations = () => {
               />
             </div>
             <h3>{data.title}</h3>
-            <Link href="/locations">
+            <Link href={`/locations#${data.title}`}>
               <SubmitButton buttonStyles={buttonStyles}>
                 <>SEE LOCATION</>
               </SubmitButton>

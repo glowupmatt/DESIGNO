@@ -18,7 +18,11 @@ const SuccessPage = ({ formInput }: SuccessPageProps) => {
           />
         </div>
         <h1>Thank you {formInput.name}</h1>
-        <p>Thanks for your interest! We hope you hope to work with you soon.</p>
+        <p>
+          Your contact information has been successfully received! We&apos;re
+          excited about the opportunity to collaborate with you and will be in
+          touch shortly.
+        </p>
       </div>
     </div>
   );

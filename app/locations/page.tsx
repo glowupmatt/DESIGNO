@@ -38,6 +38,7 @@ const Locations = () => {
           {data.map((data, index) => {
             return (
               <div
+                id={data.title}
                 key={index}
                 className={classNames(
                   "flex flex-col md:gap-[3rem]  lg:w-full lg:flex-row",
