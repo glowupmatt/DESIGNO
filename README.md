@@ -1,35 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Crypto Planet
 
-## Getting Started
+Designo is your gateway to design excellence. Our landing page is your canvas to explore and create a world of aesthetic possibilities. With an array of tools, inspiration, and resources, we empower you to bring your design ideas to life. Join us on the journey of artistic innovation, where design meets inspiration.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Next.Js
+- Prisma
+- Axios
+- Mongo DB
+- Tailwind
+- Typescript
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- Display all projects created by comopany
+- Display locations
+- Receive an error message when the contact form is submitted if
+  - The Name, Email Address or Your Message fields are empty should show "Can't be empty"
+  - The Email Address is not formatted correctly should show "Please use a valid email address"
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# DESIGNO
+https://designo-beryl.vercel.app/
